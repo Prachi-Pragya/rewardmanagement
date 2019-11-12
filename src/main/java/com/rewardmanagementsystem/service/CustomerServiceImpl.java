@@ -20,6 +20,13 @@ public Optional<Customers> getCustomersList(long mobileNo) {
 	return customerDao.findById(mobileNo);
 }
 
+@Override
+public Customers getList(Customers customer) {
+	// TODO Auto-generated method stub
+	return customerDao.save(customer);
+}
+
+
 
 
 
